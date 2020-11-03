@@ -10,7 +10,7 @@ const express = require('express');
  const app = express();
  app.get('/', (req, res) => {
    res.setHeader("Content-Type", "text/html");
-   res.send('<h1>Hello Magic World</h1>');
+   res.send('<h1>Hello Magic</h1>');
    });
 
    app.listen(PORT, HOST);
