@@ -9,8 +9,7 @@ const express = require('express');
 // App
  const app = express();
  app.get('/', (req, res) => {
-   res.setHeader("Content-Type", "text/html");
-   res.send('<h1>Hello World</h1>');
+    res.sendFile(path.join(__dirname + '/index.html'));
    });
 
    app.listen(PORT, HOST);
